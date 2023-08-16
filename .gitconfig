@@ -1,0 +1,7 @@
+[user]
+	name = Thomas Hahn
+	email = thomas.hahn01@gmail.com
+[core]
+	editor = vim
+[alias]
+	l = log --graph --abbrev-commit --decorate --format=format:'%C(blue)%h%C(reset) - %C(cyan)%aD%C(reset) %C(green)(%ar)%C(reset)%C(yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
