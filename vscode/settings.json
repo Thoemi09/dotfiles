@@ -1,0 +1,30 @@
+{
+    "editor.accessibilitySupport": "off",
+    "editor.copyWithSyntaxHighlighting": false,
+    "editor.hover.above": false,
+    "editor.minimap.enabled": false,
+    "files.watcherExclude": {
+        "**/build*/**": true
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/build*/**": true,
+        "**/.cache": true
+    },
+    "window.commandCenter": false,
+    "editor.scrollBeyondLastLine": false,
+    "explorer.excludeGitIgnore": true,
+    "search.showLineNumbers": true,
+    "telemetry.telemetryLevel": "off",
+    "files.hotExit": "off",
+    "workbench.colorCustomizations": {
+        "editor.selectionBackground": "#e788ff7c",
+        "editor.selectionHighlightBackground": "#ff00005b"
+    },
+    "cmake.configureOnOpen": true
+}
