@@ -4,21 +4,23 @@
     "editor.hover.above": false,
     "editor.minimap.enabled": false,
     "files.watcherExclude": {
+        "**/.cache": true,
+        "**/.dSYM": true,
         "**/build*/**": true
     },
     "files.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/CVS": true,
+        "**/.cache": true,
         "**/.DS_Store": true,
-        "**/Thumbs.db": true,
+        "**/.dSYM": true,
+        "**/.git": true,
+        "**/.hg": true,
+        "**/.svn": true,
         "**/build*/**": true,
-        "**/.cache": true
+        "**/CVS": true,
+        "**/Thumbs.db": true
     },
     "window.commandCenter": false,
     "editor.scrollBeyondLastLine": false,
-    "explorer.excludeGitIgnore": true,
     "search.showLineNumbers": true,
     "telemetry.telemetryLevel": "off",
     "files.hotExit": "off",
@@ -26,5 +28,13 @@
         "editor.selectionBackground": "#e788ff7c",
         "editor.selectionHighlightBackground": "#ff00005b"
     },
-    "cmake.configureOnOpen": true
+    "cmake.configureOnOpen": true,
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "cmake.installPrefix": "${workspaceFolder}/build/install",
+    //"clangd.path": "/opt/homebrew/opt/llvm/bin/clangd",
+    //"cmake.additionalCompilerSearchDirs": [
+    //    "/opt/homebrew/opt/llvm/bin",
+    //    "/opt/homebrew/opt/gcc@13/bin"
+    //],
+    //"python.defaultInterpreterPath": "/Users/thahn/.venv/python3_11_4/bin/python"
 }
