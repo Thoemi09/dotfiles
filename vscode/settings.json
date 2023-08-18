@@ -33,7 +33,7 @@
     "cmake.configureOnOpen": true,
     "cmake.buildDirectory": "${workspaceFolder}/build.${buildKitVendor}-${buildKitVersion}-${buildType}",
     "cmake.copyCompileCommands": "${sourceDirectory}/compile_commands.json",
-    "cmake.installPrefix": "${workspaceFolder}/build/install",
+    "cmake.installPrefix": "${workspaceFolder}/build.${buildKitVendor}-${buildKitVersion}-${buildType}/install",
     "cmake.configureSettings": {
         "CMAKE_VERBOSE_MAKEFILE": true
     },
