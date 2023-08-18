@@ -15,9 +15,11 @@
         "**/.git": true,
         "**/.hg": true,
         "**/.svn": true,
-        "**/build*/**": true,
         "**/CVS": true,
         "**/Thumbs.db": true
+    },
+    "search.exclude": {
+        "**/build*/**": true
     },
     "window.commandCenter": false,
     "editor.scrollBeyondLastLine": false,
@@ -29,8 +31,12 @@
         "editor.selectionHighlightBackground": "#ff00005b"
     },
     "cmake.configureOnOpen": true,
-    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "cmake.buildDirectory": "${workspaceFolder}/build.${buildKitVendor}-${buildKitVersion}-${buildType}",
+    "cmake.copyCompileCommands": "${sourceDirectory}/compile_commands.json",
     "cmake.installPrefix": "${workspaceFolder}/build/install",
+    "cmake.configureSettings": {
+        "CMAKE_VERBOSE_MAKEFILE": true
+    },
     //"clangd.path": "/opt/homebrew/opt/llvm/bin/clangd",
     //"cmake.additionalCompilerSearchDirs": [
     //    "/opt/homebrew/opt/llvm/bin",
