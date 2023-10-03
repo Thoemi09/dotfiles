@@ -1,0 +1,22 @@
+# add remote repository
+# e.g. git add upstream git@github.com:TRIQS/itertools.git
+git add <name-of-repo> <remote>
+
+# push and track local branch to remote repo
+# e.g. git push origin my_branch
+git push -u <remote> <branch>
+
+# delete remote branch
+# e.g. git push origin --delete my_branch
+git push <remote> --delete <branch>
+
+# switch and track remote branch
+# e.g. git switch -c my_branch origin/my_branch
+git switch -c <branch> <remote>/<branch>
+
+# ignore changes to a given file which is already tracked
+# e.g. git update-index --skip-worktree my_file
+git update-index --skip-worktree <file>
+
+# check which files are ignored
+git ls-files -v | grep "S "
