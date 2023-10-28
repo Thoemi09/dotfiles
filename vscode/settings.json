@@ -42,5 +42,9 @@
     //    "/opt/homebrew/opt/llvm/bin",
     //    "/opt/homebrew/opt/gcc@13/bin"
     //],
-    //"python.defaultInterpreterPath": "/Users/thahn/.venv/python3_11_4/bin/python"
+    //"python.defaultInterpreterPath": "/Users/thahn/.venv/python3_11_4/bin/python",
+    //"explorer.confirmDelete": false,
+    //"lldb.suppressUpdateNotifications": true,
+    //"githubPullRequests.pullBranch": "never",
+    "editor.inlayHints.enabled": "offUnlessPressed"
 }
