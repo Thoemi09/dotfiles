@@ -1,0 +1,46 @@
+# pull docker image from registry
+docker pull image_name
+
+# run image in interactive mode (-i) and attach to terminal (-t)
+docker run -i -t image_name /bin/bash
+
+# run image, execute command (cmd) detach from it
+docker run -d image_name cmd
+
+# execute command in running container
+docker exec container_id cmd
+
+# build an image with a tag (-t) and use the Dockerfile in pwd (.)
+docker build -t image_name .
+
+# create a volume
+docker volume create vol_name
+
+# list volumes
+docker volume ls
+
+# mount a volume in a container
+docker run ... --mount type=volume,src=vol_name,target=/container/path image_name
+
+# use a bind mount
+docker run ... --mount type=bind,src=/host/path,target=container/path image_name
+
+# push an image to docker hub
+docker push thoemi09/image_name
+
+# list running containers
+docker ps
+
+# stop running container
+docker stop container_id
+
+# remove container
+docker rm container_id
+
+# list images
+docker images
+
+# remove an image
+docker rmi image_name
+# or
+docker rmi image_id
