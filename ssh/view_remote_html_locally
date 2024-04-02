@@ -1,0 +1,10 @@
+# port forward
+ssh -L 8000:localhost:8000 you@server
+
+# on the server side
+cd /directory/where/html/is/present
+python -m SimpleHTTPServer 8000  # For python 2
+python3 -m http.server 8000 # For python 3
+
+# locally in the browser
+http://localhost:8000/index.htm

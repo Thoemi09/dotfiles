@@ -17,3 +17,8 @@ compile_commands.json
 
 # apple stuff
 *.dSYM
+.DS_Store
+
+# python
+__pychache__/
+*.py[cod]

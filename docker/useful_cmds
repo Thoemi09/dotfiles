@@ -44,3 +44,10 @@ docker images
 docker rmi image_name
 # or
 docker rmi image_id
+
+# run docker with intel mpi on the workstation
+docker run --shm-size=4gb -it triqs:ubuntu-intel /bin/bash
+
+# run MPI as root within a docker container
+export OMPI_ALLOW_RUN_AS_ROOT=1
+export OMPI_ALLOW_RUN_AS_ROOT_CONFIRM=1

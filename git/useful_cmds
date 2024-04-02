@@ -20,3 +20,6 @@ git update-index --skip-worktree <file>
 
 # check which files are ignored
 git ls-files -v | grep "S "
+
+# make an empty branch without any history
+git switch --orphan <branch>
